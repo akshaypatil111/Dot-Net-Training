@@ -1,0 +1,14 @@
+C:\Users\akshp\source\repos\SwapExample\SwapExample\bin\Debug\netcoreapp3.1\SwapExample.exe
+C:\Users\akshp\source\repos\SwapExample\SwapExample\bin\Debug\netcoreapp3.1\SwapExample.deps.json
+C:\Users\akshp\source\repos\SwapExample\SwapExample\bin\Debug\netcoreapp3.1\SwapExample.runtimeconfig.json
+C:\Users\akshp\source\repos\SwapExample\SwapExample\bin\Debug\netcoreapp3.1\SwapExample.runtimeconfig.dev.json
+C:\Users\akshp\source\repos\SwapExample\SwapExample\bin\Debug\netcoreapp3.1\SwapExample.dll
+C:\Users\akshp\source\repos\SwapExample\SwapExample\bin\Debug\netcoreapp3.1\SwapExample.pdb
+C:\Users\akshp\source\repos\SwapExample\SwapExample\obj\Debug\netcoreapp3.1\SwapExample.csproj.AssemblyReference.cache
+C:\Users\akshp\source\repos\SwapExample\SwapExample\obj\Debug\netcoreapp3.1\SwapExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akshp\source\repos\SwapExample\SwapExample\obj\Debug\netcoreapp3.1\SwapExample.AssemblyInfoInputs.cache
+C:\Users\akshp\source\repos\SwapExample\SwapExample\obj\Debug\netcoreapp3.1\SwapExample.AssemblyInfo.cs
+C:\Users\akshp\source\repos\SwapExample\SwapExample\obj\Debug\netcoreapp3.1\SwapExample.csproj.CoreCompileInputs.cache
+C:\Users\akshp\source\repos\SwapExample\SwapExample\obj\Debug\netcoreapp3.1\SwapExample.dll
+C:\Users\akshp\source\repos\SwapExample\SwapExample\obj\Debug\netcoreapp3.1\SwapExample.pdb
+C:\Users\akshp\source\repos\SwapExample\SwapExample\obj\Debug\netcoreapp3.1\SwapExample.genruntimeconfig.cache
