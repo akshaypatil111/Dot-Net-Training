@@ -1,0 +1,4 @@
+C:\Users\akshp\source\repos\Account\Account\obj\Debug\netcoreapp3.1\Account.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akshp\source\repos\Account\Account\obj\Debug\netcoreapp3.1\Account.AssemblyInfoInputs.cache
+C:\Users\akshp\source\repos\Account\Account\obj\Debug\netcoreapp3.1\Account.AssemblyInfo.cs
+C:\Users\akshp\source\repos\Account\Account\obj\Debug\netcoreapp3.1\Account.csproj.CoreCompileInputs.cache
