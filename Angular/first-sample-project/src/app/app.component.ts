@@ -8,7 +8,7 @@ import { Customer } from './app.model';
 })
 export class AppComponent {
   title = 'first-sample-project';
-  myname = 'vikash Verma'
+  myname = 'Akshay Patil'
   CustomerModel: Customer = new Customer();
   CustmerModels: Array<Customer> = new Array<Customer>();
   AddCustomer() {
@@ -19,7 +19,9 @@ export class AppComponent {
     console.log(input);
   }
   DeleteCustomer(input: Customer) {
-    console.log(input);
+    this.CustmerModels.shift();
+    this.CustomerModel = new Customer();
+
   }
 
 }
