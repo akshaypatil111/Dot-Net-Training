@@ -1,15 +1,46 @@
 import { Component, OnInit } from '@angular/core';
+import { Admin } from './admin.model';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-admin',
-  templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  templateUrl: './admin.component.html'
 })
-export class AdminComponent implements OnInit {
+export class AdminComponent{
+  constructor(public httpd:HttpClient){
 
-  constructor() { }
-
-  ngOnInit(): void {
   }
+  title='ecommerceproject';
+  AdminModel:Admin=new Admin();
+  AdminModels:Array<Admin>=new Array<Admin>();
+  AddAdmin(){
+    console.log(this.AdminModel);
+   
+    var Admindto={
+      AdminID:this.AdminModel.AdminID,
+      AdminName:this.AdminModel.AdminName,
+    }
+    this.httpd.post("https://localhost:44373/api/admin",Admindto).subscribe(res=>this.PostSuccess(res),res=>this.PostError(res));
+   
+    this.AdminModel=new Admin();
+  }
+  PostSuccess(res:any){
+    console.log(res);
 
+  }
+  PostError(res:any){
+    console.log(res);
+
+  }
+  getData(){
+   // console.log("Working");
+    this.httpd.get("https://localhost:44373/api/admin").subscribe(res=>this.GetSuccess(res),res=>this.GetError(res));
+    console.log("working");
+  }
+  GetSuccess(input:any){
+    this.AdminModels=input;
+  }
+  GetError(input:any){
+    console.log(input);
+  }
 }
+
