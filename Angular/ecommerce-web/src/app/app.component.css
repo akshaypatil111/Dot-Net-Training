@@ -1,0 +1,12 @@
+.topnav input[type=text] {
+    float: right;
+    padding: 20px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.mat-dialog-container {
+    padding: 0px !important;
+}

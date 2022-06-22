@@ -1,4 +1,5 @@
 ﻿using System;
+using EcommerceWebApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -20,6 +21,7 @@ namespace EcommerceAPI.Models
         public virtual DbSet<Admin> Admins { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<UserDetail> UserDetails { get; set; }
+        public virtual DbSet<TblLogin> TblLogins { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -60,6 +62,16 @@ namespace EcommerceAPI.Models
                 entity.Property(e => e.UserId).HasMaxLength(50);
 
                 entity.Property(e => e.UserName).HasMaxLength(50);
+            });
+            modelBuilder.Entity<TblLogin>(entity =>
+            {
+                entity.ToTable("tblLogin");
+
+                entity.Property(e => e.Id).HasColumnName("ID");
+
+                entity.Property(e => e.Password).HasMaxLength(100);
+
+                entity.Property(e => e.UserName).HasMaxLength(100);
             });
 
             OnModelCreatingPartial(modelBuilder);
