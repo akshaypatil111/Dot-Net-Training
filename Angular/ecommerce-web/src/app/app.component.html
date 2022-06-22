@@ -1,35 +1,34 @@
-
-
 <div>
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
-      <span class="navbar-brand  h1">
+      <span class="navbar-brand mb-2 h1">
         <h1>iCart</h1>
       </span>
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <form class="d-flex">
-            <input class="form-control me-2 " type="search" placeholder="Search for products..." aria-label="Search">
-            <button class="btn btn-outline-success d-md-block " type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-      <div class="navbar navbar-dark bg-dark btn-sm" >
-        <img src="https://img.icons8.com/fluency/96/undefined/shopaholic.png" class="card-body" height="5%" width="5%"
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!-- The form -->
+      <form class="card-body-centre" action="action_page.php" >
+        <input type="text" placeholder="Search for products..." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <div class="navbar navbar-dark bg-dark " style="width: 6rem;">
+        <img src="https://img.icons8.com/fluency/96/undefined/shopaholic.png" class="card-body-centre" height="90%" width="90%"
           alt="...">
-      
+
       </div>
+
     </div>
-    
   </nav>
-</div>
 
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-   
+  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto ">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
          
           <a class="btn btn-info" aria-current="page" routerLink="/home">Home</a>
@@ -55,16 +54,9 @@
     </div>
   </div>
 </nav>
-
-
-
-
-
-
-
-
-
-
+</div>
 
 <router-outlet></router-outlet>
+
+
 
