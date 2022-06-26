@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -11,6 +10,9 @@ import { AccountComponent } from './account/account.component';
 import { HomeComponent } from './home/home.component';
 import { AuthService } from './services/auth.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CartComponent } from './cart/cart.component';
+import { AddressComponent } from './address/address.component';
+import { FinalorderComponent } from './finalorder/finalorder.component';
 
 @NgModule({
   declarations: [
@@ -19,15 +21,21 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     RegisterComponent,
     AccountComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    CartComponent,
+    AddressComponent,
+    FinalorderComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule
   ],
+
   providers: [AuthService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
