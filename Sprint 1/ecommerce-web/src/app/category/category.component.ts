@@ -1,0 +1,52 @@
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CategoryService } from '../services/category.service';
+import { Category } from '../models/category';
+
+
+@Component({
+  selector: 'app-category',
+  templateUrl: './category.component.html',
+  styleUrls: ['./category.component.css']
+})
+export class CategoryComponent implements OnInit {
+
+  constructor(public httpc: HttpClient, private _catservice: CategoryService, private _router: Router) { }
+
+
+  ngOnInit(): void {}
+
+  cat:Category=new Category();
+  cats:Array<Category>=new Array<Category>();
+
+  AddCategory()
+  {
+    console.log(this.cat)
+
+    var cato={
+      id:Number(this.cat.id),
+      catName:this.cat.catName,
+    }
+    this.httpc.post("https://localhost:44316/api/Category",cato).subscribe(res=>this.PostSuccess(res),res=>this.PostError(res));
+    this.cat=new Category();
+  }
+  PostSuccess(res:any){
+    console.log(res);
+  }
+  PostError(res:any){
+    console.log(res);
+  }
+
+  Show(){
+    console.log("hi");
+    this.httpc.get("https://localhost:44316/api/Category").subscribe(res=>this.GetSuccess(res),res=>this.GetError(res));
+  }
+  GetSuccess(input:any){
+    this.cats=input;
+  }
+  GetError(input:any){
+    console.log(input);
+  }
+}
+

@@ -13,6 +13,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CartComponent } from './cart/cart.component';
 import { AddressComponent } from './address/address.component';
 import { FinalorderComponent } from './finalorder/finalorder.component';
+import { AdminComponent } from './admin/admin.component';
+import { CategoryComponent } from './category/category.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,9 @@ import { FinalorderComponent } from './finalorder/finalorder.component';
     CartComponent,
     AddressComponent,
     FinalorderComponent,
+    AdminComponent,
+    CategoryComponent,
+    UserDetailsComponent
   ],
 
   imports: [

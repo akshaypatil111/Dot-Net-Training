@@ -2,13 +2,17 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccountComponent } from './account/account.component';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CartComponent } from './cart/cart.component';
+import { AdminComponent } from './admin/admin.component';
+import { CategoryComponent } from './category/category.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 import { AddressComponent } from './address/address.component';
 import { FinalorderComponent } from './finalorder/finalorder.component';
+
 
 const routes: Routes = [
   {
@@ -40,13 +44,28 @@ const routes: Routes = [
     component: CartComponent
   },
   {
-    path: 'address',
-    component: AddressComponent
+    path: 'admin',
+    component: AdminComponent
   },
   {
-    path: 'finalorder',
-    component: FinalorderComponent
-  }
+    path: 'category',
+    component: CategoryComponent
+  },
+  {
+    path:'userdetails',
+    component:UserDetailsComponent
+  },
+  {
+    path:'address',
+    component:AddressComponent
+  },
+  {
+    path:'finalorder',
+    component:FinalorderComponent
+  },
+
+  
+ 
 ];
 
 @NgModule({

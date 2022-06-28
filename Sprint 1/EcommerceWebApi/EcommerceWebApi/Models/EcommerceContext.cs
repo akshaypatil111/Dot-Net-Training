@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -20,6 +21,7 @@ namespace EcommerceWebApi.Models
         public virtual DbSet<TblCategory> TblCategories { get; set; }
         public virtual DbSet<TblLogin> TblLogins { get; set; }
         public virtual DbSet<TblProduct> TblProducts { get; set; }
+        public IEnumerable<TblCategory> TblCategory { get; internal set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -21,7 +21,11 @@ namespace EcommerceWebApi.Controllers
             db = _db;
             iJWTMangerRepository = _iJWTMangerRepository;
         }
-
+        [HttpGet]
+        public IEnumerable<TblLogin> GetLogins()
+        {
+            return db.TblLogins;
+        }
         [HttpPost]
         [Route("login")]
         public IActionResult Login(LoginViewModel loginViewModel)

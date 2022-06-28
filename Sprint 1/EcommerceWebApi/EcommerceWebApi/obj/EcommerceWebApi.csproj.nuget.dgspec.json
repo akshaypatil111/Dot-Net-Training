@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\akshp\\source\\repos\\EcommerceWebApi\\EcommerceWebApi\\EcommerceWebApi.csproj": {}
+    "C:\\Users\\akshp\\source\\repos\\Sprint 1\\EcommerceWebApi\\EcommerceWebApi\\EcommerceWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\akshp\\source\\repos\\EcommerceWebApi\\EcommerceWebApi\\EcommerceWebApi.csproj": {
+    "C:\\Users\\akshp\\source\\repos\\Sprint 1\\EcommerceWebApi\\EcommerceWebApi\\EcommerceWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\akshp\\source\\repos\\EcommerceWebApi\\EcommerceWebApi\\EcommerceWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\akshp\\source\\repos\\Sprint 1\\EcommerceWebApi\\EcommerceWebApi\\EcommerceWebApi.csproj",
         "projectName": "EcommerceWebApi",
-        "projectPath": "C:\\Users\\akshp\\source\\repos\\EcommerceWebApi\\EcommerceWebApi\\EcommerceWebApi.csproj",
+        "projectPath": "C:\\Users\\akshp\\source\\repos\\Sprint 1\\EcommerceWebApi\\EcommerceWebApi\\EcommerceWebApi.csproj",
         "packagesPath": "C:\\Users\\akshp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\akshp\\source\\repos\\EcommerceWebApi\\EcommerceWebApi\\obj\\",
+        "outputPath": "C:\\Users\\akshp\\source\\repos\\Sprint 1\\EcommerceWebApi\\EcommerceWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\akshp\\AppData\\Roaming\\NuGet\\NuGet.Config",

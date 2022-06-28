@@ -10,24 +10,25 @@ namespace EcommerceWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductController : ControllerBase
+
+    public class CategoryController : ControllerBase
     {
         EcommerceContext db;
-        public ProductController(EcommerceContext _db)
+        public CategoryController(EcommerceContext _db)
         {
             db = _db;
         }
         [HttpGet]
-        public IEnumerable<TblProduct> GetProducts()
+        public IEnumerable<TblCategory> GetCategory()
         {
-            return db.TblProducts;
+            return db.TblCategories;
         }
         [HttpPost]
-        public String post([FromBody] TblProduct tp )
+        public string post([FromBody] TblCategory ct)
         {
-            db.TblProducts.Add(tp);
+            db.TblCategories.Add(ct);
             db.SaveChanges();
-            return "success";
+            return "Success";
         }
     }
 }
