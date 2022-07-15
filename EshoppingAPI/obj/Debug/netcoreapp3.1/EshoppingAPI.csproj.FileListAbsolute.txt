@@ -67,4 +67,3 @@ C:\Users\akshp\source\repos\EshoppingAPI\obj\Debug\netcoreapp3.1\EshoppingAPI.cs
 C:\Users\akshp\source\repos\EshoppingAPI\obj\Debug\netcoreapp3.1\EshoppingAPI.dll
 C:\Users\akshp\source\repos\EshoppingAPI\obj\Debug\netcoreapp3.1\EshoppingAPI.pdb
 C:\Users\akshp\source\repos\EshoppingAPI\obj\Debug\netcoreapp3.1\EshoppingAPI.genruntimeconfig.cache
-C:\Users\akshp\source\repos\EshoppingAPI\obj\Debug\netcoreapp3.1\EshoppingAPI.csproj.AssemblyReference.cache

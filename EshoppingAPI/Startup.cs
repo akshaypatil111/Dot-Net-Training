@@ -1,5 +1,5 @@
 using EcommerceWebApi.Interfaces;
-using EshoppingAPI.Model;
+using EshoppingAPI.Models;
 using EshoppingAPI.ViewModels;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;

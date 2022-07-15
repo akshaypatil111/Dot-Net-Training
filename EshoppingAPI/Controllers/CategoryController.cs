@@ -1,5 +1,5 @@
 ﻿
-using EshoppingAPI.Model;
+using EshoppingAPI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;

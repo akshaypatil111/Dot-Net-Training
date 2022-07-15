@@ -1,6 +1,6 @@
 ﻿
 using EcommerceWebApi.Interfaces;
-using EshoppingAPI.Model;
+using EshoppingAPI.Models;
 using EshoppingAPI.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

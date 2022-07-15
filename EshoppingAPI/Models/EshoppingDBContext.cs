@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace EshoppingAPI.Model
+namespace EshoppingAPI.Models
 {
     public partial class EshoppingDBContext : DbContext
     {
@@ -25,7 +25,7 @@ namespace EshoppingAPI.Model
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-           
+         
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
