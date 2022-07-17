@@ -1,46 +1,46 @@
-<div class="row">
+<div class="row" style="margin-left: 20px;">
     <div class="column" style="border: 2px solid black">
         <table>
             <tr>
                 <td>ID</td>
                 <td>
-                    <input [(ngModel)]= "adminprod.id" type="text">
+                    <input [(ngModel)]="adminprod.id" type="text">
                 </td>
             </tr>
             <tr>
                 <td>Product Name</td>
                 <td>
-                    <input [(ngModel)]= "adminprod.productName" type="text">
+                    <input [(ngModel)]="adminprod.productName" type="text">
                 </td>
             </tr>
             <tr>
                 <td>Product Description</td>
                 <td>
-                    <input [(ngModel)] ="adminprod.productDescription" type="text">
+                    <input [(ngModel)]="adminprod.productDescription" type="text">
                 </td>
             </tr>
             <tr>
                 <td>Category</td>
                 <td>
-                    <input [(ngModel)] ="adminprod.category" type="text">
+                    <input [(ngModel)]="adminprod.category" type="text">
                 </td>
             </tr>
             <tr>
                 <td>Product Image</td>
                 <td>
-                    <input [(ngModel)] ="adminprod.productImage" type="text">
+                    <input [(ngModel)]="adminprod.productImage" type="text">
                 </td>
             </tr>
             <tr>
                 <td>Product MRP</td>
                 <td>
-                    <input [(ngModel)] ="adminprod.productMrp" type="text">
+                    <input [(ngModel)]="adminprod.productMrp" type="text">
                 </td>
             </tr>
             <tr>
                 <td>Product Discount</td>
                 <td>
-                    <input [(ngModel)] ="adminprod.productDiscount" type="text">
+                    <input [(ngModel)]="adminprod.productDiscount" type="text">
                 </td>
             </tr>
             <tr>
@@ -50,11 +50,11 @@
                 </td>
             </tr>
 
-            <input style="background-color: chocolate; margin: 5px;" type="submit" (click)="AddProduct()">
-            <input style="background-color: cornflowerblue;" type="button" (click)="Show()" value="Show" />
+            <input type="submit" class="btn btn-primary" style="margin: 5px;" (click)="AddProduct()">
+            <input type="button" class="btn btn-success" style="margin: 5px;" (click)="Show()" value="Show" />
         </table>
     </div>
-    <div class="column">
+    <div class="column" style="margin-left: 20px;">
 
         <table border="2">
             <tr>

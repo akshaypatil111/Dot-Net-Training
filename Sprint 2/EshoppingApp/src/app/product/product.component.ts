@@ -12,6 +12,7 @@ import { CartService } from '../services/cart.service';
 })
 export class ProductComponent implements OnInit {
 public products : any;
+searchKey:string = " ";
   constructor(private _productservice: ProductService,private CartService : CartService,private _router:Router) { }
 
  // products: Array<Product> = new Array<Product>();
@@ -22,6 +23,10 @@ public products : any;
     this.products.forEach((a :any) =>{
     Object.assign(a,{quantity:1});
   });
+});
+
+this.CartService.search.subscribe((val:any)=>{
+  this.searchKey = val;
 })
   }
 

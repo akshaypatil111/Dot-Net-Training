@@ -2,12 +2,15 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
 import { CartComponent } from './cart/cart.component';
+import { CategoryComponent } from './category/category.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { FinalOrderComponent } from './finalorder/finalorder.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { OrdercompleteComponent } from './ordercomplete/ordercomplete.component';
 import { ProductComponent } from './product/product.component';
 import { RegisterComponent } from './register/register.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 const routes: Routes = [
   {
@@ -39,7 +42,10 @@ const routes: Routes = [
     path: 'cart',
     component: CartComponent
   },
- 
+  {
+    path: 'dashboard',
+    component: DashboardComponent
+  },
 
   {
     path:'finalorder',
@@ -49,9 +55,18 @@ const routes: Routes = [
     path:'ordercomplete',
     component:OrdercompleteComponent
   },
-
-
-
+  {
+    path: 'search/:searchItem',
+    component: HomeComponent
+  },
+  {
+    path:'category',
+    component:CategoryComponent
+  },
+  {
+    path:'userdetails',
+    component:UserDetailsComponent
+  },
   
  
 ];

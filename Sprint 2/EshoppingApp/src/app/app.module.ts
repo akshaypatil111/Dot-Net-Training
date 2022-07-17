@@ -1,38 +1,44 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { AuthService } from './services/auth.service';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { ProductComponent } from './product/product.component';
-import { HttpClientModule } from '@angular/common/http';
-import { AuthService } from './services/auth.service';
-import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { FinalOrderComponent } from './finalorder/finalorder.component';
-import { MyorderComponent } from './myorder/myorder.component';
+import { AdminComponent } from './admin/admin.component';
+import { ProductComponent } from './product/product.component';
 import { CartComponent } from './cart/cart.component';
-import { OrdercompleteComponent } from './ordercomplete/ordercomplete.component';
+import { CategoryComponent } from './category/category.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { FinalOrderComponent } from './finalorder/finalorder.component';
+import { FilterPipe } from './shared/filter.pipe';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ProductComponent,
-    AdminComponent,
     LoginComponent,
     RegisterComponent,
-    FinalOrderComponent,
-    MyorderComponent,
+    AdminComponent,
+    ProductComponent,
     CartComponent,
-    OrdercompleteComponent,
+    CategoryComponent,
+    DashboardComponent,
+    FinalOrderComponent,
+    FilterPipe,
+    UserDetailsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    ReactiveFormsModule,
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

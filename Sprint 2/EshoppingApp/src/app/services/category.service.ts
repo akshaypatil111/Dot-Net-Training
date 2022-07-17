@@ -3,14 +3,14 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Injectable({
-    providedIn: 'root'
+  providedIn: 'root'
 })
 export class CategoryService {
-    private _categoryUrl = "https://localhost:44321/api/Category";
+  private _categoryUrl ="https://localhost:44388/api/Category";
 
-    constructor(private http: HttpClient, _router: Router) { }
+  constructor(private http:HttpClient,_router:Router) { }
 
-    getCategorys() {
-        return this.http.get<any>(this._categoryUrl);
-    }
+  getCategories() {
+    return this.http.get<any>(this._categoryUrl);
+}
 }
