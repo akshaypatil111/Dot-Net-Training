@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { OrdercompleteComponent } from './ordercomplete/ordercomplete.component';
 import { ProductComponent } from './product/product.component';
 import { RegisterComponent } from './register/register.component';
+import { UpdateComponent } from './update/update.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 
 const routes: Routes = [
@@ -66,6 +67,10 @@ const routes: Routes = [
   {
     path:'userdetails',
     component:UserDetailsComponent
+  },
+  {
+    path: 'update',
+    component: UpdateComponent
   },
   
  

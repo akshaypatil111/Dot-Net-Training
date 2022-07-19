@@ -17,6 +17,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { FinalOrderComponent } from './finalorder/finalorder.component';
 import { FilterPipe } from './shared/filter.pipe';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { UpdateComponent } from './update/update.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     FinalOrderComponent,
     FilterPipe,
     UserDetailsComponent,
+    UpdateComponent,
   ],
   imports: [
     BrowserModule,

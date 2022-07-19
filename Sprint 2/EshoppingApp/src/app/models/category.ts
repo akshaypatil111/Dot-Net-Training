@@ -1,8 +1,5 @@
-
-export class Category {
-
-  "id": 1;
-  "catName": "Mobile"
-
+export class Category{
+  id:Number=0;
+  catName:string='';
 
 }
