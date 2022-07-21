@@ -5,9 +5,9 @@ import { Router } from '@angular/router';
 
 @Injectable()
 export class AuthService {
-  private _registerUrl = "https://localhost:44321/api/Login/register";
-  private _loginUrl = "https://localhost:44321/api/Login/login";
-  private _userUrl="https://localhost:44321/api/Login";
+  private _registerUrl = "https://eshopping.azurewebsites.net/api/Login/register";
+  private _loginUrl = "https://eshopping.azurewebsites.net/api/Login/login";
+  private _userUrl="https://eshopping.azurewebsites.net/api/Login";
 
   constructor(private http: HttpClient,private _router:Router) { }
 
